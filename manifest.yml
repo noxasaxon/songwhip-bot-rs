@@ -1,0 +1,37 @@
+display_information:
+  name: Songwhipp
+features:
+  bot_user:
+    display_name: Songwhipp
+    always_online: false
+  slash_commands:
+    - command: /song
+      url: https://<MY_BOT_URL>/slack/commands
+      description: query url via songwhip.com
+      should_escape: false
+  unfurl_domains:
+    - youtube.com
+    - youtu.be
+    - spotify.com
+    - music.apple.com
+    - pandora.com
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - chat:write.customize
+      - commands
+      - im:write
+      - links:read
+settings:
+  event_subscriptions:
+    request_url: https://<MY_BOT_URL>/slack/events
+    bot_events:
+      - link_shared
+  interactivity:
+    is_enabled: true
+    request_url: https://<MY_BOT_URL>/slack/interaction
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
+

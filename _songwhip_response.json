@@ -1,0 +1,181 @@
+{
+  "artists": [
+    {
+      "createdAt": "2017-10-04T18:50:00.263Z",
+      "description": "William Ezechukwu Onyeabor was a Nigerian funk musician and businessman. His music was widely heard in Nigeria in the late 1970s and early 1980s, but he remained an enigmatic figure, private and reclusive.\nOnyeabor's songs are often heavily rhythmic and synthesized, occasionally epic in scope, with lyrics decrying war, sung by both Onyeabor himself and female backing vocalists. In the 2010s, some of his songs appeared on various compilations, most frequently his biggest hit, \"Better Change Your Mind\", which appeared on Africa 100, World Psychedelic Classics 3: Love's a Real Thing – The Funky Fuzzy Sounds of West Africa, and Nigeria 70: The Definitive Story of 1970's Funky Lagos, through labels such as Luaka Bop.",
+      "id": 121021,
+      "image": "https://i.scdn.co/image/683b46e963c1db53727703a1aff9a707b0b0ecc1",
+      "links": {
+        "amazon": [
+          {
+            "countries": [
+              "US"
+            ],
+            "link": "https://amazon.com/dp/B000RHOKE8"
+          }
+        ],
+        "amazonMusic": [
+          {
+            "countries": [
+              "US"
+            ],
+            "link": "https://music.amazon.com/artists/B000RHOKE8"
+          }
+        ],
+        "bandcamp": [
+          {
+            "countries": null,
+            "link": "https://williamonyeabor.bandcamp.com"
+          }
+        ],
+        "deezer": [
+          {
+            "countries": null,
+            "link": "https://www.deezer.com/artist/4932"
+          }
+        ],
+        "discogs": [
+          {
+            "countries": null,
+            "link": "https://www.discogs.com/artist/289162-William-Onyeabor"
+          }
+        ],
+        "facebook": [
+          {
+            "countries": null,
+            "link": "http://www.facebook.com/WilliamOnyeabor"
+          }
+        ],
+        "googleplay": [
+          {
+            "countries": null,
+            "link": "https://play.google.com/music/m/Avhyxn646bjwhaxycja5575wdym"
+          }
+        ],
+        "googleplayStore": [
+          {
+            "countries": null,
+            "link": "https://play.google.com/store/music/artist?id=Avhyxn646bjwhaxycja5575wdym"
+          }
+        ],
+        "itunes": [
+          {
+            "countries": [
+              "US"
+            ],
+            "link": "https://music.apple.com/{country}/artist/william-onyeabor/6667947?app=music"
+          }
+        ],
+        "itunesStore": [
+          {
+            "countries": [
+              "US"
+            ],
+            "link": "https://music.apple.com/{country}/artist/william-onyeabor/6667947?app=itunes"
+          }
+        ],
+        "napster": [
+          {
+            "countries": null,
+            "link": "https://napster.com/william-onyeabor"
+          }
+        ],
+        "pandora": [
+          {
+            "countries": [
+              "US"
+            ],
+            "link": "https://www.pandora.com/artist/william-onyeabor/ARfqqJp7JXK4fJ4"
+          }
+        ],
+        "spotify": [
+          {
+            "countries": null,
+            "link": "https://open.spotify.com/artist/755pQSGUy6rtPrUCbnJTvi"
+          }
+        ],
+        "tidal": [
+          {
+            "countries": [
+              "US"
+            ],
+            "link": "https://listen.tidal.com/artist/3614056"
+          }
+        ],
+        "wikipedia": [
+          {
+            "countries": null,
+            "link": "http://en.wikipedia.org/wiki/William_Onyeabor"
+          }
+        ],
+        "youtube": [
+          {
+            "countries": null,
+            "link": "https://youtube.com/channel/UCC8Kbo8OnDN_NQTB-y7HT4g"
+          }
+        ],
+        "youtubeMusic": [
+          {
+            "countries": null,
+            "link": "https://music.youtube.com/browse/UCC8Kbo8OnDN_NQTB-y7HT4g"
+          }
+        ]
+      },
+      "linksCountries": [
+        "US"
+      ],
+      "name": "William Onyeabor",
+      "orchardId": "1b291369-6b0a-4fa7-8c19-14ada19b2222",
+      "path": "william-onyeabor",
+      "refreshedAt": "2020-10-29T11:56:02.089Z",
+      "serviceIds": {
+        "amazon": "B000RHOKE8",
+        "bandcamp": "4284045401",
+        "deezer": "4932",
+        "discogs": "289162",
+        "googleplay": "Avhyxn646bjwhaxycja5575wdym",
+        "itunes": "6667947",
+        "napster": "art.7087419",
+        "pandora": "AR:277047",
+        "spotify": "755pQSGUy6rtPrUCbnJTvi",
+        "tidal": "3614056",
+        "yandex": "1151036"
+      },
+      "sourceCountry": "RU",
+      "sourceUrl": "https://open.spotify.com/artist/755pQSGUy6rtPrUCbnJTvi",
+      "spotifyId": "755pQSGUy6rtPrUCbnJTvi",
+      "type": "artist",
+      "updatedAt": "2022-01-23T20:27:00.863Z",
+      "url": "/william-onyeabor"
+    }
+  ],
+  "createdAt": "2021-07-13T07:36:45.617Z",
+  "id": 708515,
+  "image": "https://is4-ssl.mzstatic.com/image/thumb/Music71/v4/a9/3f/fe/a93ffeb6-f1f0-9ef8-2cec-8dd66209a1f2/680899503327.jpg/1000x1000bb.jpg",
+  "isrc": "USLB11110081",
+  "links": {
+    "amazon": true,
+    "amazonMusic": true,
+    "deezer": true,
+    "itunes": true,
+    "itunesStore": true,
+    "napster": true,
+    "qobuz": true,
+    "spotify": true,
+    "tidal": true,
+    "youtube": true,
+    "youtubeMusic": true
+  },
+  "linksCountries": [
+    "US"
+  ],
+  "name": "Atomic Bomb",
+  "path": "william-onyeabor/atomic-bomb",
+  "refreshedAt": "2022-01-23T20:27:00.881Z",
+  "releaseDate": "2013-10-29T00:00:00.000Z",
+  "sourceCountry": "FR",
+  "sourceUrl": "https://open.spotify.com/track/5dEt0DGA9MGwBlwdBG6a62",
+  "type": "track",
+  "updatedAt": "2022-01-23T20:27:00.881Z",
+  "url": "https://songwhip.com/william-onyeabor/atomic-bomb"
+}

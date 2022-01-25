@@ -1,0 +1,35 @@
+{
+  "api_app_id": "A02UTFXBN23",
+  "authorizations": [
+    {
+      "enterprise_id": null,
+      "is_bot": true,
+      "is_enterprise_install": false,
+      "team_id": "TK1G0QUGP",
+      "user_id": "U02V1EBET62"
+    }
+  ],
+  "event": {
+    "channel": "C02V85P7D0T",
+    "event_ts": "1643077335.974338",
+    "is_bot_user_member": true,
+    "links": [
+      {
+        "domain": "music.apple.com",
+        "url": "https://music.apple.com/us/album/crisis/1214450961?i=1214450969"
+      }
+    ],
+    "message_ts": "1643077335.005400",
+    "source": "conversations_history",
+    "type": "link_shared",
+    "unfurl_id": "C02V85P7D0T.1643077335.005400.9b54297220747181404235da101b11ab86e421c3d7440818e04ba80406c06ee0",
+    "user": "UK81X0AJZ"
+  },
+  "event_context": "4-eyJldCI6Imxpbmtfc2hhcmVkIiwidGlkIjoiVEsxRzBRVUdQIiwiYWlkIjoiQTAyVVRGWEJOMjMiLCJjaWQiOiJDMDJWODVQN0QwVCJ9",
+  "event_id": "Ev030D9W4S5P",
+  "event_time": 1643077335,
+  "is_ext_shared_channel": false,
+  "team_id": "TK1G0QUGP",
+  "token": "49UXpIyYUtdo8IkYdL9HYTqK",
+  "type": "event_callback"
+}
