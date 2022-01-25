@@ -5,7 +5,7 @@ Slack bot that queries Songwhip when it detects music URLs.
 - Invite the app to a channel to automatically post threaded Songwhip messages when it detects a music URL
 - Or use `/song` command to query Songwhip directly
 
-<img src=./songwhip-bot.png width="450px" >
+<img src=./songwhip-bot.png width="300px" >
 
 - [songwhip-bot-rs](#songwhip-bot-rs)
     - [Supported Features](#supported-features)
