@@ -54,7 +54,8 @@ pub async fn songwhip_query(data: &str) -> Result<Option<SongwhipResponseBody>> 
     } else {
         match *status {
             StatusCode::BAD_REQUEST => {
-                debug!("No song found for url: {}", data);
+                // debug!("No song found for url: {}", data); // removing this line to prevent logging possibly 'sensitive' youtube videos
+                debug!("No song found for that url");
                 Ok(None)
             }
             _ => {
