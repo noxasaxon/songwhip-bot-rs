@@ -27,7 +27,7 @@ pub struct SlackInteractionWrapper {
 }
 
 pub async fn handle_slack_interaction(
-    slack_state: &SlackStateWorkaround,
+    _slack_state: &SlackStateWorkaround,
     payload: SlackInteractionWrapper,
 ) -> (StatusCode, Value) {
     if let Ok(interaction_event) = from_str::<SlackInteractionEvent>(&payload.payload) {

@@ -17,12 +17,12 @@ RUN echo "fn main(){}" > crates/bot_server/src/main.rs && echo "fn main(){}" > c
 # RUN mkdir src && echo "fn main(){}" > src/main.rs
 
 # Will build all dependent crates in release mode
-RUN cargo build --release --features ansi
+RUN cargo build --release 
 
 # Copy the rest
 COPY . .
 # Build (install) the actual binaries
-RUN cargo install --locked --path ./crates/bot_server --features ansi
+RUN cargo install --locked --path ./crates/bot_server 
 
 # Runtime image
 FROM debian:buster

@@ -1,5 +1,5 @@
 // use crate::pagerduty::models::OncallList;
-use anyhow::{anyhow, bail, Result};
+use anyhow::{bail, Result};
 use hyper::client::{Client, HttpConnector};
 use hyper::{Body, Request, StatusCode};
 use hyper_rustls::{ConfigBuilderExt, HttpsConnector, HttpsConnectorBuilder};

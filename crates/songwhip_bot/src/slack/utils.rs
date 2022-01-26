@@ -1,10 +1,11 @@
-use anyhow::{anyhow, Result};
 use serde::{Deserialize, Serialize};
 use slack_morphism::prelude::*;
 use slack_morphism_hyper::{
     SlackClientHyperConnector, SlackClientHyperHttpsConnector, SlackHyperClient,
 };
 use std::{collections::HashMap, env, sync::Arc};
+use tracing::error;
+use url::{ParseError, Url};
 
 /// Helper for slack token->client persistence
 pub struct SlackStateWorkaround {
@@ -66,22 +67,16 @@ pub async fn check_slack_formatted_message_for_urls(message: &str) -> Vec<String
 }
 
 pub fn check_slash_command_for_urls(raw_text: &str) -> Vec<String> {
-    use url::{ParseError, Url};
-
     let words = raw_text.split_whitespace();
-
     let mut urls = Vec::default();
 
     for word in words {
         if let Err(parse_err) = Url::parse(word) {
-            match parse_err {
-                ParseError::RelativeUrlWithoutBase => {
-                    let with_base = format!("https://{}", word);
-                    if let Ok(_correct_url) = Url::parse(&with_base) {
-                        urls.push(with_base)
-                    }
+            if parse_err == ParseError::RelativeUrlWithoutBase {
+                let with_base = format!("https://{}", word);
+                if let Ok(_correct_url) = Url::parse(&with_base) {
+                    urls.push(with_base)
                 }
-                _ => (),
             }
         } else {
             urls.push(word.into());
@@ -145,6 +140,33 @@ impl SlackResponseAction {
 pub struct SlackBlockValidationError {
     pub block_id: SlackBlockId,
     pub error_message: String,
+}
+
+pub async fn is_bot_in_channel(
+    slack_state: &SlackStateWorkaround,
+    channel_id: SlackChannelId,
+) -> bool {
+    // check if bot is allowed in the channel
+    match slack_state
+        .open_session()
+        .conversations_info(&SlackApiConversationsInfoRequest::new(channel_id))
+        .await
+    {
+        Ok(resp) => match resp.channel.flags.is_member {
+            Some(membership) => membership,
+            None => {
+                error!("no membership present for this channel: {:?}", resp);
+                false
+            }
+        },
+        Err(slack_error) => {
+            error!(
+                "Failed to fetch conversation info when checking if bot in channel: {}",
+                slack_error
+            );
+            false
+        }
+    }
 }
 
 pub fn add_emoji_colons(emoji_name: &str) -> String {

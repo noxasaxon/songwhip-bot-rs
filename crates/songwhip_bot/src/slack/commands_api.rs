@@ -1,9 +1,8 @@
+use super::SlackStateWorkaround;
 use crate::{
     check_slash_command_for_urls, events_api::build_songwhip_slack_message,
     songwhip::songwhip_query,
 };
-
-use super::SlackStateWorkaround;
 use axum::{
     body,
     extract::{Extension, Form},
@@ -12,7 +11,7 @@ use axum::{
 };
 use slack_morphism::prelude::*;
 use std::sync::Arc;
-use tracing::error;
+use tracing::{debug, error};
 
 /// slash commands?
 pub async fn axum_handler_handle_slack_commands_api(
@@ -28,6 +27,7 @@ pub async fn axum_handler_handle_slack_commands_api(
         .unwrap()
 }
 
+// separate into a non-axum function for possible use without Axum (e.g. Lambda function)
 pub async fn handle_slack_command(
     slack_state: Arc<SlackStateWorkaround>,
     payload: SlackCommandEvent,
@@ -36,7 +36,7 @@ pub async fn handle_slack_command(
         let msg_urls = check_slash_command_for_urls(&message);
 
         if msg_urls.is_empty() {
-            println!("No urls found in slash command");
+            debug!("No urls found in slash command");
             return;
         }
 
