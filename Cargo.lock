@@ -1433,7 +1433,8 @@ checksum = "9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5"
 [[package]]
 name = "slack-morphism"
 version = "0.25.0"
-source = "git+https://github.com/noxasaxon/slack-morphism-rust?branch=add-types#0c19ff485de87cb40cb05fdd1968c15324685d7a"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3cd64ac885770192474f8cf217f9360e5bf00bcc09019ffbadf72d28c676b2c4"
 dependencies = [
  "async-trait",
  "base64",
@@ -1457,7 +1458,8 @@ dependencies = [
 [[package]]
 name = "slack-morphism-hyper"
 version = "0.25.0"
-source = "git+https://github.com/noxasaxon/slack-morphism-rust?branch=add-types#0c19ff485de87cb40cb05fdd1968c15324685d7a"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f749fc100a7f62a8b5d6810a66d62d61b27c290a291ebd41a225ec05b013825b"
 dependencies = [
  "async-recursion",
  "async-trait",
@@ -1490,7 +1492,8 @@ dependencies = [
 [[package]]
 name = "slack-morphism-models"
 version = "0.25.0"
-source = "git+https://github.com/noxasaxon/slack-morphism-rust?branch=add-types#0c19ff485de87cb40cb05fdd1968c15324685d7a"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b11bf653c056a38ce585ae1ec431904cb57e2e95148f322fd863bd71436a5064"
 dependencies = [
  "chrono",
  "rsb_derive",
