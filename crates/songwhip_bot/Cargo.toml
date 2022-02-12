@@ -12,12 +12,9 @@ ansi = ["tracing-subscriber/ansi"]
 [dependencies]
 axum = "0.4"
 tokio = { version = "1.15", features = ["sync"]}
-slack-morphism="0.25"
-slack-morphism-models="0.25"
-slack-morphism-hyper="0.25"
-# slack-morphism={ git = "https://github.com/noxasaxon/slack-morphism-rust", branch = "add-types"}
-# slack-morphism-models = { git = "https://github.com/noxasaxon/slack-morphism-rust", branch = "add-types"}
-# slack-morphism-hyper={ git = "https://github.com/noxasaxon/slack-morphism-rust", branch = "add-types"}
+slack-morphism="0.27"
+slack-morphism-models="0.27"
+slack-morphism-hyper="0.27"
 serde = "1.0"
 serde_json = "1.0"
 tracing = "0.1"

@@ -1425,6 +1425,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "signal-hook-tokio"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "213241f76fb1e37e27de3b6aa1b068a2c333233b59cca6634f634b80a27ecf1e"
+dependencies = [
+ "futures-core",
+ "libc",
+ "signal-hook",
+ "tokio",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1432,9 +1444,9 @@ checksum = "9def91fd1e018fe007022791f865d0ccc9b3a0d5001e01aabb8b40e46000afb5"
 
 [[package]]
 name = "slack-morphism"
-version = "0.25.0"
+version = "0.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3cd64ac885770192474f8cf217f9360e5bf00bcc09019ffbadf72d28c676b2c4"
+checksum = "d0d41f428c183209771584352d6ac14ee773140739389c3ed2fe97dc179ac5c7"
 dependencies = [
  "async-trait",
  "base64",
@@ -1443,23 +1455,22 @@ dependencies = [
  "hex",
  "http",
  "lazy_static",
- "log",
  "ring",
  "rsb_derive",
  "rvstruct",
  "serde",
  "serde_json",
  "serde_with",
- "signal-hook",
  "slack-morphism-models",
+ "tracing",
  "url",
 ]
 
 [[package]]
 name = "slack-morphism-hyper"
-version = "0.25.0"
+version = "0.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f749fc100a7f62a8b5d6810a66d62d61b27c290a291ebd41a225ec05b013825b"
+checksum = "73367476b89899c9cc43ea0aa8263b80ba0c94237be401fc5179d07693f7ae44"
 dependencies = [
  "async-recursion",
  "async-trait",
@@ -1472,7 +1483,6 @@ dependencies = [
  "hyper",
  "hyper-rustls",
  "lazy_static",
- "log",
  "mime",
  "rand",
  "ring",
@@ -1481,19 +1491,22 @@ dependencies = [
  "serde",
  "serde_json",
  "serde_with",
+ "signal-hook",
+ "signal-hook-tokio",
  "slack-morphism",
  "slack-morphism-models",
  "tokio",
  "tokio-stream",
  "tokio-tungstenite",
+ "tracing",
  "url",
 ]
 
 [[package]]
 name = "slack-morphism-models"
-version = "0.25.0"
+version = "0.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b11bf653c056a38ce585ae1ec431904cb57e2e95148f322fd863bd71436a5064"
+checksum = "2c905fb2fc390ac6a08be5c09f0730a7a27b744fe0d022022bc2e66235cfb9d7"
 dependencies = [
  "chrono",
  "rsb_derive",
@@ -1677,9 +1690,9 @@ checksum = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
 
 [[package]]
 name = "tokio"
-version = "1.15.0"
+version = "1.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fbbf1c778ec206785635ce8ad57fe52b3009ae9e0c9f574a728f3049d3e55838"
+checksum = "0c27a64b625de6d309e8c57716ba93021dccf1b3b5c97edd6d3dd2d2135afc0a"
 dependencies = [
  "bytes 1.1.0",
  "libc",
