@@ -1,6 +1,6 @@
 ## USED FOR FLY.IO Deployments
 # https://hub.docker.com/_/rust
-FROM rust:1.58.1 as builder
+FROM rust:1.80.1 as builder
 
 # Make a fake Rust app to keep a cached layer of compiled crates
 RUN USER=root cargo new app
@@ -25,7 +25,7 @@ COPY . .
 RUN cargo install --locked --path ./crates/bot_server 
 
 # Runtime image
-FROM debian:buster
+FROM debian:bookworm
 
 RUN apt-get update \
     && apt-get install -y ca-certificates tzdata \

@@ -1,7 +1,7 @@
 use super::SlackStateWorkaround;
 use crate::{
-    check_slash_command_for_urls, events_api::build_songwhip_slack_message,
-    songwhip::songwhip_query,
+    check_slash_command_for_urls, events_api::build_songlink_slack_message,
+    songlink::songlink_query,
 };
 use axum::{
     body,
@@ -44,7 +44,7 @@ pub async fn handle_slack_command(
             let mut valid_results = Vec::default();
 
             for msg_url in msg_urls {
-                match songwhip_query(&msg_url).await {
+                match songlink_query(&msg_url).await {
                     Ok(query) => {
                         if let Some(songwhip_body) = query {
                             valid_results.push(songwhip_body);
@@ -66,7 +66,7 @@ pub async fn handle_slack_command(
                         .chat_post_message(
                             &SlackApiChatPostMessageRequest::new(
                                 convo_open.channel.id,
-                                build_songwhip_slack_message(valid_results),
+                                build_songlink_slack_message(valid_results),
                             )
                             .opt_unfurl_links(Some(false))
                             .opt_unfurl_media(Some(false)),

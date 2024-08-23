@@ -1,0 +1,35 @@
+[
+  {
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": "<https://song.link/us/i/44733632|_*What We Worked For*_> \n by Against Me!"
+    },
+    "accessory": {
+      "type": "image",
+      "image_url": "https://direct.rhapsody.com/imageserver/images/alb.7338556/385x385.jpeg",
+      "alt_text": "songlink song image"
+    }
+  },
+  {
+    "type": "section",
+    "fields": [
+      {
+        "type": "mrkdwn",
+        "text": "<https://geo.music.apple.com/us/album/_/44734006?i=44733632&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m|:apple-inc: _*Apple Music*_>"
+      },
+      {
+        "type": "mrkdwn",
+        "text": "<https://open.spotify.com/track/12Pgnvye9Vn1X5e9fAzBiG|:spotify: _*Spotify*_>"
+      },
+      {
+        "type": "mrkdwn",
+        "text": "<https://www.youtube.com/watch?v=SZsvRgqi3Fc|:youtube: _*Youtube*_>"
+      },
+      {
+        "type": "mrkdwn",
+        "text": "<https://music.youtube.com/watch?v=SZsvRgqi3Fc|:youtube-music: _*YT Music*_>"
+      }
+    ]
+  }
+]

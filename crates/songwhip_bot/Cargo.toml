@@ -11,21 +11,30 @@ ansi = ["tracing-subscriber/ansi"]
 
 [dependencies]
 axum = "0.4"
-tokio = { version = "1.15", features = ["sync"]}
-slack-morphism="0.27"
-slack-morphism-models="0.27"
-slack-morphism-hyper="0.27"
+tokio = { version = "1.15", features = ["sync"] }
+slack-morphism = "0.27"
+slack-morphism-models = "0.27"
+slack-morphism-hyper = "0.27"
 serde = "1.0"
 serde_json = "1.0"
 tracing = "0.1"
-tracing-subscriber = { version="0.3", default-features=false, features = ["env-filter", "tracing-log", "smallvec", "fmt"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = [
+    "env-filter",
+    "tracing-log",
+    "smallvec",
+    "fmt",
+] }
 regex = "1.5"
 nanoid = "0.4"
 anyhow = "1.0"
 # slack verification middleware
 hyper = { version = "0.14" }
-hyper-rustls = {version = "0.23", features = ["webpki-roots", "rustls-native-certs"]}
+hyper-rustls = { version = "0.23", features = [
+    "webpki-roots",
+    "rustls-native-certs",
+] }
 rustls = "0.20"
 tower = "0.4"
 dotenv = "0.15"
 url = "2.2"
+itertools = "0.13"
