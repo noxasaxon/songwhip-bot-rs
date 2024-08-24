@@ -103,20 +103,11 @@ pub struct SonglinkPlatformLink {
     pub entity_unique_id: String,
 }
 
-pub fn map_platform_to_emoji(platform: &str) -> Option<&'static str> {
-    match platform {
-        "appleMusic" => Some("apple-inc"),
-        "spotify" => Some("spotify"),
-        "youtube" => Some("youtube"),
-        "youtubeMusic" => Some("youtube-music"),
-        _ => None,
-    }
-}
-
 pub fn map_platform_to_formatted_display_name(platform: &str) -> Option<&'static str> {
     match platform {
         "appleMusic" => Some(":apple-inc: _*Apple Music*_"),
         "spotify" => Some(":spotify: _*Spotify*_"),
+        "deezer" => Some(":deezer: _*Deezer*_"),
         "youtube" => Some(":youtube: _*Youtube*_"),
         "youtubeMusic" => Some(":youtube-music: _*YT Music*_"),
         _ => None,

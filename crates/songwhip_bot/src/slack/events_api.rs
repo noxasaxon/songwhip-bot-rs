@@ -191,7 +191,6 @@ mod tests {
         let body: SonglinkResponseBody = serde_json::from_str(songlink_output).unwrap();
 
         let slack_msg = build_songlink_slack_message(vec![body]);
-        write_serde_struct_to_file("testing.json", &slack_msg);
 
         println!("{:?}", serde_json::to_string(&slack_msg).unwrap());
     }

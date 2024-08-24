@@ -7,7 +7,7 @@
     },
     "accessory": {
       "type": "image",
-      "image_url": "https://direct.rhapsody.com/imageserver/images/alb.7338556/385x385.jpeg",
+      "image_url": "https://content-images.p-cdn.com/images/14/88/28/46/55ce4f52ad6940fdefe248b9/_500W_500H.jpg",
       "alt_text": "songlink song image"
     }
   },
@@ -17,6 +17,10 @@
       {
         "type": "mrkdwn",
         "text": "<https://geo.music.apple.com/us/album/_/44734006?i=44733632&mt=1&app=music&ls=1&at=1000lHKX&ct=api_http&itscg=30200&itsct=odsl_m|:apple-inc: _*Apple Music*_>"
+      },
+      {
+        "type": "mrkdwn",
+        "text": "<https://www.deezer.com/track/64497787|:deezer: _*Deezer*_>"
       },
       {
         "type": "mrkdwn",
